@@ -17,3 +17,8 @@ services:
       - /proc:/host/proc:ro
       - /sys:/host/sys:ro
       - /:/rootfs:ro
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
